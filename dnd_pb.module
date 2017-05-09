@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Contains dnd_pb.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\dnd_pb\Entity\DndLayoutEntity;
+use Drupal\node\NodeInterface;
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_help().
+ */
+function dnd_pb_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dnd_pb module.
+    case 'help.page.dnd_pb':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Drag and drop page builder entity thing?') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dnd_pb_theme() {
+  return [
+    'dnd_pb' => [
+      'template' => 'dnd_pb',
+      'render element' => 'children',
+    ],
+  ];
+}
+
+function dnd_pb_node_insert(NodeInterface $node) {
+  $nid = $node->id();
+  $ntitle = $node->getTitle();
+  if (!empty($node->getTitle())) {
+    $layout = DndLayoutEntity::create();
+    $layout->set('id', $nid);
+    $layout->set('vid', $nid);
+    $layout->set('name', $ntitle);
+    $layout->save();
+  }
+}
+
+function dnd_pb_page_bottom($page) {
+  $layout = DndLayoutEntity::load(1);
+  $node = Node::load(7);
+  var_dump($layout->id());
+}

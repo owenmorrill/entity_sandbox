@@ -1,0 +1,14 @@
+{
+  "name": "drupal/dnd_pb",
+  "type": "drupal-module",
+  "description": "Drag and drop page builder entity thing?",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/dnd_pb",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/dnd_pb",
+    "source": "http://cgit.drupalcode.org/dnd_pb"
+  },
+  "require": { }
+}

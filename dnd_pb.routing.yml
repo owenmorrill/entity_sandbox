@@ -1,0 +1,7 @@
+dnd_pb.edit_layout:
+  path: 'node/{dnd_layout_entity}/layout'
+  defaults:
+    _controller: '\Drupal\dnd_pb\Controller\DndEditLayoutEntityController::editLayout'
+    _title: 'Edit Layout'
+  requirements:
+    _permission: 'access content'

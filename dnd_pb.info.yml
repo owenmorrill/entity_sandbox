@@ -1,0 +1,5 @@
+name: dnd_pb
+type: module
+description: Drag and drop page builder entity thing?
+core: 8.x
+package: Other

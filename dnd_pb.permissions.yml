@@ -1,0 +1,33 @@
+add dnd layout entity entities:
+  title: 'Create new Dnd layout entity entities'
+
+administer dnd layout entity entities:
+  title: 'Administer Dnd layout entity entities'
+  description: 'Allow to access the administration form to configure Dnd layout entity entities.'
+  restrict access: true
+
+delete dnd layout entity entities:
+  title: 'Delete Dnd layout entity entities'
+
+edit dnd layout entity entities:
+  title: 'Edit Dnd layout entity entities'
+
+access dnd layout entity overview:
+  title: 'Access the Dnd layout entity overview page'
+
+view published dnd layout entity entities:
+  title: 'View published Dnd layout entity entities'
+
+view unpublished dnd layout entity entities:
+  title: 'View unpublished Dnd layout entity entities'
+
+view all dnd layout entity revisions:
+  title: 'View all Dnd layout entity revisions'
+
+revert all dnd layout entity revisions:
+  title: 'Revert all Dnd layout entity revisions'
+  description: 'Role requires permission <em>view Dnd layout entity revisions</em> and <em>edit rights</em> for dnd layout entity entities in question or <em>administer dnd layout entity entities</em>.'
+
+delete all dnd layout entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Dnd layout entity revisions</em> and <em>delete rights</em> for dnd layout entity entities in question or <em>administer dnd layout entity entities</em>.'

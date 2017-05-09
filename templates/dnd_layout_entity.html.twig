@@ -1,0 +1,22 @@
+{#
+/**
+ * @file dnd_layout_entity.html.twig
+ * Default theme implementation to present Dnd layout entity data.
+ *
+ * This template is used when viewing Dnd layout entity pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_dnd_layout_entity()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('dnd_layout_entity') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

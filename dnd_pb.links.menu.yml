@@ -1,0 +1,14 @@
+
+# Dnd layout entity menu items definition
+entity.dnd_layout_entity.collection:
+  title: 'Dnd layout entity list'
+  route_name: entity.dnd_layout_entity.collection
+  description: 'List Dnd layout entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+dnd_layout_entity.admin.structure.settings:
+  title: Dnd layout entity settings
+  description: 'Configure Dnd layout entity entities'
+  route_name: dnd_layout_entity.settings
+  parent: system.admin_structure
